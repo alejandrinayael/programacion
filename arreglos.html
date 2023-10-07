@@ -1,0 +1,27 @@
+<html>
+<script>
+    let frutas = ["Manzana", "Platano", "Uva"];
+    document.write("Arreglo original:  " + frutas);
+    document.write("frutas.length:  " + frutas.length +"<br>");
+    document.write("frutas[2]: " + frutas[2]+"<br>");
+    document.write("frutas.push('Guayaba')");
+    frutas.push("Guayaba"+"<br>")
+    document.write("Arreglo:  " + frutas);
+    document.write("frutas.length:  " + frutas.length+"<br>");
+    frutas.pop();
+    document.write("Arreglo Eliminado:  " + frutas.length+"<br>"); 
+    frutas.unshift("Fresa");
+    document.write("frutas.añadida.primero:  " + frutas.length+"<br>");
+
+    frutas.forEach(function (elemento, indice, array) {
+  document.write(elemento, indice);
+});
+
+</script>
+
+<body>
+<h2>HOLA MUNDO</h2>
+<h2>COMAN FRUTAS Y VERDURAS :3 </h2>
+</body>
+
+</html>
