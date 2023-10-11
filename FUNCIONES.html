@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CELULARES</title>
+</head>
+<body>
+    <script>
+        /* Declarando la función 'myFunc' */
+function myFunc(elobjeto) {
+  elobjeto.marca = "Motorola";
+}
+
+/*
+ * Declarando la variable 'mycel';
+ * Se crea e inicializa el nuevo objeto;
+ * para hacer referencia a él mediante 'mycel'
+ */
+var mycel = {
+  marca: "Samsung",
+  modelo: "Galaxy S23",
+  año: 2022,
+};
+
+/* Mostrando 'Honda' */
+window.alert(mycel.marca);
+
+/* Paso por referencia del objeto 
+'mycel' a la función 'myFunc'*/
+myFunc(mycel);
+
+/*
+ * Muestra 'Motorola' como valor de la propiedad 'marca'
+ * del objeto, que ha sido cambiado por la función.
+ */
+window.alert(mycel.marca);
+    </script>
+</body>
+</html>
